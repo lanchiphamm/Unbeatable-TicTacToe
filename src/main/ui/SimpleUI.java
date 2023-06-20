@@ -35,11 +35,7 @@ public class SimpleUI {
     private void runGame() {
         while (runGame) {
             numOfGames++;
-            if (numOfGames % 2 == 0) {
-                whichPlayer = false;
-            } else {
-                whichPlayer = true;
-            }
+            whichPlayer = numOfGames % 2 != 0;
             System.out.println("Let's play!");
             while (!gameOver) {
                 printBoardState();

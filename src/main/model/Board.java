@@ -1,5 +1,7 @@
 package main.model;
 
+import java.util.Objects;
+
 public class Board {
 
     private String[][] board = new String[3][3];
@@ -25,7 +27,7 @@ public class Board {
     }
 
     public boolean emptySquare(int x, int y) {
-        return board[x][y] == "";
+        return Objects.equals(board[x][y], "");
     }
 
     public boolean hasWon() {

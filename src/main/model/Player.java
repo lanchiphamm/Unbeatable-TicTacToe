@@ -15,6 +15,9 @@ public class Player {
     public String getName() {
         return name;
     }
+    public String getSymbol() {
+        return symbol;
+    }
     public void updateGamesWon() {
         gamesWon++;
     }
